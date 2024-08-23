@@ -15,7 +15,7 @@ public class Coupon {
     private Long id;
     private String code;
     private BigDecimal discount;
-    private String exp_Date;
+    private String expirationDate;
 
     public Long getId() {
         return id;
@@ -41,12 +41,12 @@ public class Coupon {
         this.discount = discount;
     }
 
-    public String getExpDate() {
-        return exp_Date;
+    public String getExpirationDate() {
+        return expirationDate;
     }
 
-    public void setExpDate(String exp_Date) {
-        this.exp_Date = exp_Date;
+    public void setExpirationDate(String expirationDate) {
+        this.expirationDate = expirationDate;
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Coupon {
                 "id=" + id +
                 ", code='" + code + '\'' +
                 ", discount=" + discount +
-                ", exp_Date='" + exp_Date + '\'' +
+                ", expirationDate='" + expirationDate + '\'' +
                 '}';
     }
 }
